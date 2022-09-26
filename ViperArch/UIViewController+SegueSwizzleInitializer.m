@@ -3,13 +3,8 @@
 
 @implementation UIViewController (SegueSwizzleInitializer)
 
-+ (void)initialize {
-    [super initialize];
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [UIViewController segueSwizzle];
-    });
++ (void)load {    
+    [UIViewController segueSwizzle];
 }
 
 @end
