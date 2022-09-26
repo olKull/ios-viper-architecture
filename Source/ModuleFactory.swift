@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol ModuleFactoryProtocol: class {
+public protocol ModuleFactoryProtocol: AnyObject {
     func instantiateModuleTransitionHandler() -> ModuleTransitionHandler?
 }
 

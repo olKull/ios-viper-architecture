@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol ModuleInput: class {
+public protocol ModuleInput: AnyObject {
     func set(moduleOutput: ModuleOutput)
 }
 

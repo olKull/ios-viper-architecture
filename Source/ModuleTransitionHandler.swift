@@ -2,7 +2,7 @@ import UIKit
 
 public typealias ModuleTransitionBlock = (_ sourceModuleTransitionHandler: ModuleTransitionHandler?, _ destinationModuleTransitionHandler: ModuleTransitionHandler?) -> Void
 
-public protocol ModuleTransitionHandler: class {
+public protocol ModuleTransitionHandler: AnyObject {
     var moduleInput: ModuleInput? { get set }
 
     func performSegue(withIdentifier identifier: String)
